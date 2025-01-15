@@ -1,0 +1,7 @@
+---SCRIPTS DIRECTORY FOR FILTERING SCRIPTS---
+-AF_grpmax_filter.sh
+  -->Hard filter based on AF_grpmax, the maximum allele frequency in anu population on gnomAD
+-filter_FS_MQ_QD.py
+  -->Filters on FS (Fisher strand bias), MQ (mapping quality), and QD (QUAL/DP; Quality by depth) on sensible filters
+-top5_percent_vep_go_filter.py
+  -->Filters all variants not in the top 5% of any VEP scores and not in the top 25% of GO enrichment scores for each category (Filters 88.5% of genes)
