@@ -54,9 +54,3 @@ This directory contains a collection of utility scripts designed to assist with 
     ```
   - Provide a file or individual identifier to convert from HGNC to UniProt IDs.
 
----
-
-### General Notes
-- **Dependencies:** Ensure all required dependencies and permissions are met for each script. Some may require specific command-line tools or Python libraries.
-- **File Compatibility:** These scripts are designed for TSV and VCF files. Ensure your files are properly formatted before using them.
-- **Error Handling:** Use the `find_problem_rows.sh` script to verify your TSV files for formatting issues.
