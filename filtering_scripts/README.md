@@ -19,5 +19,5 @@
 - **Description:**
   - Filters out variants that:
     - Are not in the top 5% of any VEP scores.
-    - Are not in the top 25% of GO enrichment scores for each category.
+    - Are not in the top 25% of GO enrichment scores for each category. (~11.5% of all human genes have GO enrichment scores in top 25% of each category)
   - **Note:** This filter removes 88.5% of genes.
