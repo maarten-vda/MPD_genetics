@@ -1,30 +1,42 @@
-# SCRIPTS DIRECTORY FOR PREPROCESSING SCRIPTS
+# Scripts Directory for Preprocessing Scripts
 
---preprocess_everything.sh
+## `preprocess_everything.sh`
+- **Description:**
+  - From the cohort VCF, this script:
+    - Removes the info field.
+    - Adds gnomAD-style IDs.
+    - Filters for PASS variants.
+    - Splits multiallelic sites.
+    - Runs Ensembl VEP.
+    - Executes the `variant_selection.R` script to add UniProt-level identifiers.
+    - Adds cohort summary stats per variant.
+  - **Purpose:** This script performs all the preprocessing tasks.
 
-  -->From the cohort VCF, this script removes the info field, adds gnomAD-style IDs, filters for pass variants, splits multiallelic sites, runs Ensembl VEP, and then the variant_selection.R script adding uniprot-level identifiers, and adds cohort summary stats per variant. 
-  
-  -->This script does all the preprocessing 
+---
 
---run_vep.sh
+## `run_vep.sh`
+- **Description:**
+  - Runs Ensembl VEP.
+  - Executes the `variant_selection.R` script to correctly format the data.
 
-  -->Runs ensembl VEP and then the variant selection R script to correctly format the data
+---
 
+## `variant_selection.R`
+- **Description:**
+  - Adds UniProt-level identifiers to the dataset.
 
+---
 
---variant_selection.R
+## `add_summary_stats_to_unprocessed_tsv.sh`
+- **Description:**
+  - Adds summary statistics to a cohort TSV, including:
+    - Number of variants.
+    - Homozygous probands.
+    - Allele numbers (ANs) for both diagnosed and undiagnosed cohorts.
 
-  -->Adds uniprot-level identifiers
+---
 
-
-
---add_summary_stats_to_unprocessed_tsv.sh
-
-  -->Adds summary statistics for how many variants, homozygous probands, and ANs for both diagnosed and undiagnosed cohorts to a cohort TSV.
-
-
-
---fast_add_gnomad.sh
-
-  -->This adds gnomAD style IDs to the cohort VCF, these are preserved when ensembl VEP converts to TSV. 
-
+## `fast_add_gnomad.sh`
+- **Description:**
+  - Adds gnomAD-style IDs to the cohort VCF.
+  - Ensures these IDs are preserved when Ensembl VEP converts the data to TSV format.
