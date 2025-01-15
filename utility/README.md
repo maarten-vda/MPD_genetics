@@ -19,8 +19,7 @@ This directory contains a collection of utility scripts designed to assist with 
   - Useful for identifying formatting issues or corrupted rows in large datasets.
 - **Usage:**
   - Provide a TSV file as input to the script to perform the check.
-  - ```bash
-  bash add_uniprot_by_gene_name.sh <path_to_input_file.tsv>
+  - ```bash bash add_uniprot_by_gene_name.sh <path_to_input_file.tsv>
 ---
 
 ## `get_parents_genotypes.sh`
